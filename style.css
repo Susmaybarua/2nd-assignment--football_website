@@ -1,0 +1,136 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+/* body start */
+.body-head{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center; 
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+}
+.body-head-section{
+    display: flex; 
+   
+    align-items: center;
+}
+.body-head-title{
+    width: 485px;
+    height: 230px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 64px;
+    line-height: 80px;
+    padding-right: 102px;
+}
+.body-head-button{
+    width: 168px;
+    height: 44px;
+    background-color:  #E02C6D;
+    
+}
+.body-head-button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.body-head-banner img{
+    width: 556px;
+    height: 438px;
+    padding-top: 153px;
+   padding-bottom: 86px;
+}
+.body-head-banner img:hover{
+    transform: scale(1.2);
+    transition: 3s ease-in-out 0.2s;
+}
+/*---------------------------
+ main start
+  --------------------------*/
+.main-body{
+    
+    display: flex; 
+    justify-content: center;
+  
+}
+.main-container{
+    width: 1050px;
+
+}
+.main-body-section{
+    background-color: #F1F1F1;
+    
+}
+.players{
+    width: 330px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.player{
+    height: 474px;
+    width: 330px;
+    background-color: #FFFFFF;
+     margin: 10px 10px 27px 10px;
+     overflow: hidden;
+   
+}
+
+.player img{
+    width: 310px;
+    height: 260px;
+    margin: 10px;
+}
+.player h3,p{
+    margin: 10px;
+}
+
+/* 
+bottom-section start
+ */
+ .bottom-section{
+    font-family: 'Poppins', sans-serif;
+     display: flex;
+     justify-content: center;
+     padding-top: 165px;
+     
+ }
+
+.highlight-info{
+    width: 466px;
+    height: 309px;
+    padding-right: 69px;
+   
+}
+.highlight-pic img{
+width: 567px;
+height: 427px;
+
+
+}
+/* 
+bottom-section end
+ */
+
+
+ /* 
+footer-section start
+ */
+.footer-section{
+   display: flex;
+   justify-content: center;
+    padding-top: 158px;
+   
+}
+.footer-info{
+    width: 483px;
+    height: 213px;
+    display: grid;
+    text-align: center;
+}
+.footer-info img{
+    width: 483px;
+    height: 100px;
+}
+ /* 
+footer-section start
+ */

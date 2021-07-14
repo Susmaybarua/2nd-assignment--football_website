@@ -292,3 +292,54 @@ footer-section end
          }
          /*footer media quary end*/
 }
+
+
+/* ---------------------------------for tablet/Notepad /ipad---------------------------------*/
+
+
+@media only screen and (min-width:695px) and (max-width :992px){
+    .body-head{
+        width: 100%;
+       
+        flex-direction: column;
+    }
+    .body-head-section{
+    grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .body-head-info{
+        padding:112px 0px 80px 90px;
+    }
+    .body-head-banner img{
+       
+        padding:50px 0px 100px 90px;
+    } 
+    .body-head:hover img{
+        transform: scale(1.2);
+        transition: 3s ease-in-out 0.2s;
+    } 
+    
+/* body- header media quary part end   */
+    /*main-body-part1 media quary start*/
+    .players{
+        padding-left: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+/*main-body-part2 media quary start*/
+.main-body-section2{
+       
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 10px;
+    padding-left: 64px;
+   
+    
+}
+
+/* heighlight info start for pad*/
+.highlight-info{
+    
+    padding:20px 20px 20px 50px;
+    
+}
+/* heighlight info end for pad */
+   }

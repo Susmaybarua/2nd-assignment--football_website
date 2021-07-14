@@ -1,7 +1,7 @@
 /* google fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
-/* body start */
+ /* body- header part start */
 .body-head{
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -10,8 +10,9 @@
     margin-bottom: 70px;
 }
 .body-head-section{
-    display: flex; 
    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
 .body-head-title{
@@ -44,10 +45,12 @@
     transform: scale(1.2);
     transition: 3s ease-in-out 0.2s;
 }
+
+/* body- header part end */
 /*---------------------------
- main start
+ main-body-part1 start
   --------------------------*/
-.main-body{
+.main-body-part1{
     
     display: flex; 
     justify-content: center;
@@ -84,14 +87,26 @@
 .player h3,p{
     margin: 10px;
 }
-
+.player{
+    font-size: 18px;
+}
+/*---------------------------
+ main-body-part1 end
+  --------------------------*/
 /* 
-bottom-section start
+/*---------------------------
+ main-body-part2 start
+  --------------------------*/
  */
- .bottom-section{
-    font-family: 'Poppins', sans-serif;
+ .main-body-part2{
      display: flex;
      justify-content: center;
+     
+ }
+ .main-body-section2{
+    font-family: 'Poppins', sans-serif;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
      padding-top: 165px;
      
  }
@@ -100,16 +115,19 @@ bottom-section start
     width: 466px;
     height: 309px;
     padding-right: 69px;
-   
+    padding-left: 140px;
+    animation: highlight-inform 10s linear 2;
 }
+.highlight-info p{
+    font-size: 18px;
+    }
 .highlight-pic img{
 width: 567px;
 height: 427px;
-
-
+animation: highlight-pics 10s linear;
 }
 /* 
-bottom-section end
+main-body-part2 end
  */
 
 
@@ -122,16 +140,155 @@ footer-section start
     padding-top: 158px;
    
 }
+.footer-info img{
+    width: 483px;
+    height: 100px;
+}
 .footer-info{
     width: 483px;
     height: 213px;
     display: grid;
     text-align: center;
 }
-.footer-info img{
-    width: 483px;
-    height: 100px;
-}
+
  /* 
-footer-section start
+footer-section end
  */
+
+/* animation start */
+
+@keyframes highlight-pics {
+    0%{
+       transform: translateX(500px);
+         
+    }
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.highlight-pic img{
+    animation-delay: 4s;
+}
+
+
+@keyframes highlight-inform {
+    0%{
+        transform: translateX(-500px);
+     }
+     100%{
+         transform: translateX(1400px);
+     }
+}
+.highlight-info{
+    animation-delay: 4s;
+}
+/* animation end */
+
+
+ /*-------------------
+  media quary start
+
+  responsive for iPhone5/SE
+  iPhone 6/7/8
+  iphone X
+  ------------------ */
+
+
+ @media only screen and (max-width:695px){
+    .body-head{
+        width: 360px;
+        height: 695px;
+        
+        flex-direction: column;
+    }
+    .body-head-section{
+    grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .body-head-info{
+        padding-left: 16px;
+    }
+   
+    .body-head-title{
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        line-height: 50px;
+        padding: 112px 66px 30px 0px;
+   
+    }
+    .body-head-banner img{
+        width: 329px;
+        height: 259px;
+        padding:50px 16px 61px 15px;
+    } 
+    .body-head:hover img{
+        transform:none;
+        
+    } 
+    /* body- header media quary part end   */
+    /*main-body-part1 media quary start*/
+    .players{
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*main-body-part1 media quary end*/
+    /*main-body-part2 media quary start*/
+    .main-body-section2{
+       
+         grid-template-columns: repeat(1, 1fr);
+         padding-top: 0px;
+        
+         
+     }
+     .highlight-info{
+        width: 329px;
+        height: 299px;
+        padding:60px 16px 150px 15px;
+       
+    }
+    .highlight-info h1{
+        font-size: 30px;
+    }
+    .highlight-info p{
+        font-size: 16px;
+    }
+    
+    .highlight-pic img{
+        width: 328px;
+        height: 248px;
+        padding-top:30px 16px ;
+        
+        
+        }
+    /*main-body-part1 media quary end*/
+     /*footer media quary start*/
+        .footer-section{
+            
+             padding-top: 43px;
+            
+         }
+        .footer-info{
+            width: 275px;
+            height: 213px;
+            
+           
+        }
+        
+        .footer-info img{
+            width: 275px;
+            height: 50px;
+            
+
+        }
+        .icons{
+            width: 170px;
+            height: 32px;
+            padding-left: 55px;
+        }
+        .footer-section p{
+            
+            font-size: 16px;
+         }
+         /*footer media quary end*/
+}
